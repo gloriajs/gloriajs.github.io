@@ -1,0 +1,7 @@
+name: gloria-docs
+location: gloria-docs
+longname: 'Gloria docs'
+layout: bootstrap
+author: 'david silva'
+description: 'Documentation for the tool gloriajs'
+version: 0.4.0
