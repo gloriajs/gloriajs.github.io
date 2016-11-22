@@ -5,4 +5,4 @@ layout: bootstrap
 author: 'david silva'
 description: 'Documentation for the tool gloriajs'
 version: 0.4.0
-dest: docs
+dest: site
