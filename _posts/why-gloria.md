@@ -17,7 +17,7 @@ I will be adding instructions soon about deploying to github and firebase.
 
 It's also a very young project, so feel free to poke around and contribute! and ask me anything :D
 
-# Easy access
+## Easy access
 
 Another reason for Gloria is creating an open source project that is super friendly for
 beginers. I mentor different students from some bootcamps and other groups, and sometimes
@@ -27,3 +27,9 @@ Gloria aims to be a very friendly community, with code being easy to read and un
 its members willing to collaborate and pair with new contributors to get them onboard.
 
 There are many projects like this, but this is ours. Enjoy!
+
+## Atwood's Law
+
+Any application that can be written in JavaScript, will eventually be written in JavaScript.
+
+[Check here for details](https://blog.codinghorror.com/the-principle-of-least-power/)
