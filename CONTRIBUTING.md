@@ -57,3 +57,25 @@ under its [Apache license](LICENSE).
 We recommend using the git flow method, to know what type of code is going in every branch.
 
 Installing the addon [git flow](https://github.com/nvie/gitflow) will facilitate this.
+
+#Code styles
+
+We use jsc to make sure the style in the code is similar across every developer.
+
+Arbitrarily we decided to use the airbnb style guide. You can learn more about it
+[in their github repo](https://github.com/airbnb/javascript).
+
+Look at our [.jscrc file](https://github.com/gloriajs/gloria/blob/master/.jscsrc).
+
+Pull requests that don't adhere to the code style will probably get rejected, or commented with
+some advice.
+
+The code style includes things like how to do indentation, how to declare variables, allowed
+capitalization, etc.
+
+#Testing Pull Requests
+
+A great way to contribute too is to look at the pull requests opened by other contributors.
+
+To check out locally the code pushed by others, look at this
+[guide put together by github](https://help.github.com/articles/checking-out-pull-requests-locally/).
