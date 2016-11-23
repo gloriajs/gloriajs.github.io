@@ -51,3 +51,9 @@ We actively welcome any pull requests that are backed up by current issues or by
 
 By contributing to Gloria, you agree that your contributions will be licensed
 under its [Apache license](LICENSE).
+
+#Branchin Strategies
+
+We recommend using the git flow method, to know what type of code is going in every branch.
+
+Installing the addon [git flow](https://github.com/nvie/gitflow) will facilitate this.
