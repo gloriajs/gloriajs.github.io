@@ -2,17 +2,10 @@
 <html lang="en">
     {{> head}}
     <body>
-        <header class="container">
-            <div class="page-header">
-                <h1><a href="/">Gloria</a> <small>static site generator</small></h1>
-            </div>
-            <nav>
-                <a href="/blog">Blog</a>
-            </nav>
-        </header>
+        {{>header}}
         <div class="container">
             {{{page.content}}}
         </div>
-        <script src="/scripts/jquery-1.10.2.min.js"></script>
+        <script src="/scripts/gloria.js"></script>
     </body>
 </html>

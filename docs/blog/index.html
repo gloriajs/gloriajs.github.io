@@ -8,18 +8,35 @@
       <meta name="author" content="david silva">
     
       <link rel="stylesheet" href="/css/flatly.min.css">
+      <link rel="stylesheet" href="/sass/main.css">
     
       <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
       <![endif]-->
     </head>
     <body>
-        <header class="container">
-            <div class="page-header">
-                <h1><a href="/">Gloria</a> <small>static site generator</small></h1>
-            </div>
-            <nav>
-                <a href="/blog">Blog</a>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Gloria</a>
+                    </div>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/blog">Blog</a></li>
+                        <li ><a href="/contributing/">Contributing</a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
             </nav>
         </header>
         <div class="container">
@@ -30,6 +47,6 @@
 </ul>
 
         </div>
-        <script src="/scripts/jquery-1.10.2.min.js"></script>
+        <script src="/scripts/gloria.js"></script>
     </body>
 </html>
