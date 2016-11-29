@@ -65,7 +65,7 @@ Options:
 Creates new content, with different templates, depending on the type desired.
 
 Usage: 
-```
+```bash
 new [type] [title] 
 # Examples:
 gloria new post hello-world
@@ -106,6 +106,6 @@ By default it will ignore the .git directory and other files that it considers u
 
 Usage: 
 
-```
+```bash
 gloria build docs
 ```
