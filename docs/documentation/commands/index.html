@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    
+      <title>gloria-docs</title>
+      <meta name="description" content="Documentation for the tool gloriajs">
+      <meta name="author" content="david silva">
+    
+      <link rel="stylesheet" href="/css/flatly.min.css">
+      <link rel="stylesheet" href="/sass/main.css">
+    
+      <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Gloria</a>
+                    </div>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/blog">Blog</a></li>
+                        <li ><a href="/documentation/commands/">Usage</a></li>
+                        <li ><a href="/contributing/">Contributing</a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <div class="container">
+            <p>After installing gloria, several commands are now available for
+you to interact with your page, create new content, build
+and distribute easier! </p>
+<h2 id="available-commands">Available commands</h2>
+<ul>
+<li><a href="#init">init</a></li>
+<li><a href="#new">new</a></li>
+<li><a href="#build">build</a></li>
+<li><a href="#serve">serve</a></li>
+<li><a href="#migrate">migrate</a></li>
+<li><a href="#help">help</a></li>
+<li><a href="#version">version</a></li>
+</ul>
+<p><a name='init'></a></p>
+<h2 id="init">init</h2>
+<p>It initializes a new gloria website in the destination folder. This is the only
+command that is started from an outside directory. Every other command requires
+a <code>_config.yml</code> to be present in order to execute. </p>
+<p>Usage:</p>
+<pre><code class="lang-bash">gloria init mysite
+</code></pre>
+<p>Initializes a new site, interactively or using the given parameters. 
+It will create a base configuration file and sample pages using the desired 
+layout.</p>
+<p>Options:</p>
+<pre><code class="lang-bash">  --version      Show version number                                   [boolean]
+  --help         Show help                                             [boolean]
+  --name         Short name to use in the site&#39;s configuration, folder name
+                                                                   [default: &quot;&quot;]
+  --longname     A longer name to use in your site&#39;s content       [default: &quot;&quot;]
+  --description  Set a description for your site                   [default: &quot;&quot;]
+  --location     Folder where your files and site will be at       [default: &quot;&quot;]
+  --layout       There are two layouts currently available:
+                 Bootstrap, includes bootstrap css files with several themes
+                 form bootswatch
+                 Default, is basically an empty layout.   [default: &quot;bootstrap&quot;]
+  --interactive  Use the interactive prompt to complete the details
+                                                                 [default: true]
+  --force        If files exists, overwrite them?               [default: false]
+</code></pre>
+<p><a name='new'></a></p>
+<h2 id="new">New</h2>
+<p>Creates new content, with different templates, depending on the type desired.</p>
+<p>Usage: </p>
+<pre><code>new [type] [title] 
+# Examples:
+gloria new post hello-world
+gloria new --type=page --title=&#39;Contact Us&#39; --description=&#39;Contact form.&#39;
+</code></pre><p>Options:</p>
+<pre><code class="lang-bash">  --version      Show version number                                   [boolean]
+  --help         Show help                                             [boolean]
+  --type         Type of content to create.
+                 post|page|layout|partial|sass|css|public are available.
+                                                               [default: &quot;post&quot;]
+  --title        Title for the page or content.                    [default: &quot;&quot;]
+  --name         Name for the file, if none is provided, title will be used.
+                                                                   [default: &quot;&quot;]
+  --description  Description for the page or content.              [default: &quot;&quot;]
+  --category     Category, usually included in posts.              [default: &quot;&quot;]
+  --verbose      Supress logs and warnings                       [default: true]
+  --folder       Can be used to prepend to the directory where the file is
+                 created.                                          [default: &quot;&quot;]
+</code></pre>
+<p><a name='build'></a></p>
+<h2 id="build">Build</h2>
+<p>Generates all the pages and posts, copies the assets to the desired location, and
+prepares the website to be launched.</p>
+<p>Builds the site into the desired destination. By default it will use a folder name &#39;site&#39; in the root
+directory of the project, and will create it if doesn&#39;t exists. If it exists it will delete
+all it&#39;s contents before writing to it.</p>
+<p>It won&#39;t build to a parent folder. The command will fail if _config.yml is invalid or not present. </p>
+<p>By default it will ignore the .git directory and other files that it considers unnecesary.</p>
+<p>Usage: </p>
+<pre><code>gloria build docs
+</code></pre>
+        </div>
+        <script src="/scripts/gloria.js"></script>
+    </body>
+</html>
