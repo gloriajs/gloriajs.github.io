@@ -35,7 +35,7 @@
                     <ul class="nav navbar-nav">
                         <li ><a href="/documentation/commands/">Usage</a></li>
                         <li ><a href="/contributing/">Contributing</a></li>
-                        <li class="active"><a href="/blog">Blog</a></li>
+                        <li ><a href="/blog">Blog</a></li>
                     </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -43,13 +43,53 @@
         </header>
         <a href="https://github.com/gloriajs/gloria"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
         <div class="container">
-            <h1>Blog</h1>
+            <h1>Deploying to Github</h1>
 
-<ul class="posts-list">
-    <li><a href="/blog/docs/deploying-to-github">docs - Deploying to Github</a></li>
-    <li><a href="/blog/meta/why-gloria">meta - Why Gloria</a></li>
-</ul>
+            <p>Gloria is compatible with the new github pages out of the box. Is the easiest
+way to deploy your site for free! with support for custom domains and </p>
+<p><a href="https://pages.github.com/">Find more information about Github Pages</a></p>
+<h2 id="steps">Steps</h2>
+<h3 id="build">Build</h3>
+<p>Build the project to a folder named <code>docs</code>.</p>
+<pre><code class="lang-bash">gloria build docs
+</code></pre>
+<h3 id="push">Push</h3>
+<p>Do git add, commit and push to send your data to github.</p>
+<p>Push your project to github, you can use any branch, but master is usually
+the best one to use.</p>
+<h3 id="select-the-pages-source">Select the pages source</h3>
+<p>In the repo settings, there&#39;s an option called github pages. The source appears
+as <code>none</code> by default. If you pushed a <code>docs</code> folder there should be an option
+that allows you to choose branch master and docs folder.</p>
+<p>Github will serve the files from that folder, the same way that <code>gloria serve</code> works. </p>
+<h3 id="-">?</h3>
+<p>???</p>
+<h3 id="profit">Profit</h3>
+<p>Share the URL with everyone!</p>
+<h3 id="additional-steps">Additional Steps</h3>
+<h4 id="ssl">SSL</h4>
+<p>CloudFlare and github pages work very well for free SSL,
+configure your domain to use the cloudflare DNS and activate the SSL.
+You can get more 
+<a href="https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/">details in their website</a>. </p>
+<h4 id="custom-domain">Custom domain</h4>
+<p>Using a custom domain with github pages is super easy!</p>
+<p>Change your DNS settings to the following, depending on whether you&#39;re using a naked domain or www.</p>
+<p>For Apex or naked domain, create two A records pointing to:</p>
+<pre><code>192.30.252.153
+192.30.252.154
+</code></pre><p>To use a subdomain, like www, create a CNAME record pointing to:</p>
+<pre><code>YOUR-GITHUB-USERNAME.github.io
+</code></pre><p><a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">Find more info in their website</a>.</p>
 
+
+            <div>
+                
+            </div>
+
+            <p>
+                <a href="/">Home</a>
+            </p>
         </div>
         <footer class="container-fluid">
             <div class="col-sm-4">
@@ -68,7 +108,6 @@
                     </strong>
                 </p>
             </div>
-        </footer>        <script src="/scripts/gloria.js"></script>
-        <script src="/prism/prism.js"></script>
+        </footer>        <script src="/scripts/jquery-1.10.2.min.js"></script>
     </body>
 </html>
