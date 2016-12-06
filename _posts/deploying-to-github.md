@@ -3,7 +3,7 @@ title: Deploying to Github
 description: ""
 type: post
 layout: ""
-category: "docs"
+category: docs
 url: deploying-to-github
 ---
 

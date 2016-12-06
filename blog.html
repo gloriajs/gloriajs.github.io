@@ -5,6 +5,6 @@ url: /blog/
 
 <ul class="posts-list">
   {{#each posts}}
-    <li><a href="{{data.url}}">{{data.category}} - {{title}}</a></li>
+    <li><a href="{{url}}"><strong>{{capitalize category}}</strong>: {{capitalize title}}</a></li>
   {{/each}}
 </ul>
