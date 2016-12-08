@@ -52,13 +52,13 @@ We actively welcome any pull requests that are backed up by current issues or by
 By contributing to Gloria, you agree that your contributions will be licensed
 under its [Apache license](LICENSE).
 
-#Branchin Strategies
+## Branching Strategies
 
 We recommend using the git flow method, to know what type of code is going in every branch.
 
 Installing the addon [git flow](https://github.com/nvie/gitflow) will facilitate this.
 
-#Code styles
+## Code styles
 
 We use jsc to make sure the style in the code is similar across every developer.
 
@@ -73,7 +73,7 @@ some advice.
 The code style includes things like how to do indentation, how to declare variables, allowed
 capitalization, etc.
 
-#Testing Pull Requests
+## Testing Pull Requests
 
 A great way to contribute too is to look at the pull requests opened by other contributors.
 
