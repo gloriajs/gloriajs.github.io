@@ -79,3 +79,7 @@ A great way to contribute too is to look at the pull requests opened by other co
 
 To check out locally the code pushed by others, look at this
 [guide put together by github](https://help.github.com/articles/checking-out-pull-requests-locally/).
+
+## Code of Conduct
+
+Keep in mind our [code of conduct](/coc) when participating.
