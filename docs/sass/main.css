@@ -1,5 +1,12 @@
-header .navbar.navbar-default {
-  border-radius: 0 !important; }
+header.header {
+  background: none;
+  padding: 0; }
+  header.header .navbar.navbar-default {
+    border-radius: 0 !important;
+    margin-bottom: 0; }
+
+.main-content {
+  padding: 40px; }
 
 footer {
   margin-top: 30px;

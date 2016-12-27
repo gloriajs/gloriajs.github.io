@@ -2,26 +2,24 @@
 url: / 
 name: Home
 description: Documentation website for gloria
+layout: full
 ---
+    <header>
+      <div class="inner">
+        <h1>Welcome to GloriaJS</h1>
+        <h2>{{page.description}}</h2> 
+      </div>
+    </header>
+
+
+
+
 <div class="container">
-    <div class="jumbotron">
-        <h1>Welcome to {{site.longname}}</h1>
-        <p>{{page.description}}</p>
-    </div>
-</div>
-<h1>Join Gloria in Slack</h1>
-<p>We have a slack team where you can get support, help for contributing, or where you can 
-    participate shaping the future of the project. 
-    <a href="http://slack.gloriajs.com">Go here to request an invite</a>.
-</p>
-<div class="container">
-    <div class="alert alert-danger">
-        <strong>Under construction</strong>
-        <p>This project is still on its infancy, v1.0.0 should be ready soon. If you want to
-            see that happening faster please consider contributing.
-            Look at the open issues in <a href="http://github.com/gloriajs/gloria">github</a> and make a PR!
-        </p>
-    </div>
+    <h1>Join Gloria in Slack</h1>
+    <p>We have a slack team where you can get support, help for contributing, or where you can 
+        participate shaping the future of the project. 
+        <a href="http://slack.gloriajs.com">Go here to request an invite</a>.
+    </p>
 
     <div id="output" class="content markdown-body">
         <p>
@@ -190,3 +188,5 @@ npm 3.10.3
 
         <p>Try upgrading your version of node and run <code>yarn</code> again. Or open an <a href="https://github.com/gloriajs/gloria/issues">issue</a>            describing your problem.</p>
     </div></div>
+
+</div>

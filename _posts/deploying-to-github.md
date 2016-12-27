@@ -3,6 +3,7 @@ title: Deploying to Github
 description: ""
 type: post
 layout: ""
+category: docs
 url: deploying-to-github
 ---
 
@@ -44,16 +45,16 @@ Github will serve the files from that folder, the same way that `gloria serve` w
 
 Share the URL with everyone!
 
-### Additional Steps
+## Additional Steps
 
-#### SSL
+### SSL
 
 CloudFlare and github pages work very well for free SSL,
 configure your domain to use the cloudflare DNS and activate the SSL.
 You can get more 
 [details in their website](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/). 
 
-#### Custom domain
+### Custom domain
 
 Using a custom domain with github pages is super easy!
 

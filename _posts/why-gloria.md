@@ -3,6 +3,7 @@ title: Why Gloria
 category: meta
 date: 2016-11-23
 author: david silva
+url: why-gloria
 ---
 
 I got super frustrated because Jekyll stopped working on my computer, so I figured it 

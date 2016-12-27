@@ -7,6 +7,8 @@ category: documentation
 url: documentation/commands
 ---
 
+# Usage
+
 After installing gloria, several commands are now available for
 you to interact with your page, create new content, build
 and distribute easier! 
@@ -125,8 +127,35 @@ Options:
   -v, --version  Show version number                                   [boolean]
 ```
 
+<a name="migrate"></a>
+## Migrate
+
+It will try to migrate a site from a jekyll source to be compatible with gloria.
+
+It works for a little, but it requires some manual work, backup your content first or
+create a duplicate and run the command over it, this will overwrite your current files.
+
+- permalink in frontmatter should be transformed to url
+- the for syntax is super different to #each
+- most partials and helpers won't work
+- sass files and coffeescript won't work easily, each case has to be addressed separately
+
+Usage:
+
+```bash
+gloria migrate [source]
+
+Options:
+  --help         Show help                                             [boolean]
+  --source       Source platform.                            [default: "jekyll"]
+  --exporto      When specified, the folder where the new files will be exported
+                                                                [default: false]
+  -v, --version  Show version number                                   [boolean]
+  --dest                                                       [default: "docs"]
+```
+
 <a name="serve"></a>
-## serve
+## Serve
 
 Serves the site from the last known destination, or from the specific folder given
 
@@ -148,3 +177,53 @@ Options:
                                                        [boolean] [default: true]
   -v, --version           Show version number                          [boolean]
 ```
+
+<a name="help"></a>
+## Help
+
+Running `gloria help` will display the most recent list of commands, options and
+their description you have access to.
+
+It's output will look like this:
+
+```bash
+Commands:
+  build [dest]        Builds the site into the desired destination.
+                      By default it will use a folder name 'site' in the root
+                      directory of the project.
+                      It won't build to a parent folder.
+                      The command will fail if _config.yml is invalid or not
+                      present.
+  init [name]         Initializes a new site, interactively or using the given
+                      parameters.
+                      It will create a base configuration file and sample pages
+                      using the desired layout.                [aliases: create]
+  migrate [source]    Migrates an existing website from a different platform to
+                      gloria.
+                      I'ts pretty buggy now and only works with jekyll.
+                      The replacement is pretty poor right now, it uses regex to
+                      find some liquid tags
+                      and replaces them with handlebars. It ignores some helpers
+                      like loops.
+                      It requires some extra manual work. If that's not cool
+                      with you, please consider a PR.
+  new [type] [title]  Creates new content, with different templates, depending
+                      on the type.
+                      Examples:
+                      gloria new post hello-world
+                      gloria new --type=page --title='Contact Us'
+                      --description='Contact form.'                 [aliases: n]
+  serve [dest]        Serves the site from the last known destination, or from
+                      the specific folder given.
+
+Options:
+  --help         Show help                                             [boolean]
+  -v, --version  Show version number                                   [boolean]
+
+For more information, check out the documentation in github.com/gloriajs/gloria
+```
+
+<a name="version"></a>
+## version
+
+Running `gloria --version` will display the current version of gloria installed in your system.

@@ -47,37 +47,16 @@
             </nav>
         </header>
         <a href="https://github.com/gloriajs/gloria"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-        <div class="container">
-            <h1>Why Gloria</h1>
-
-            <p>I got super frustrated because Jekyll stopped working on my computer, so I figured it 
-would be faster to create a new system from scratch than debug ruby gems. 
-I was wrong, but it was a lot of fun and learning.</p>
-<p>The system is not ready to release yet, the sites you build might need some tweaking and have some
-limitations, but it works very well and if you&#39;re willing to tinker with it, you can have
-production ready websites pretty quickly.</p>
-<p>I will be adding instructions soon about deploying to github and firebase.</p>
-<p>It&#39;s also a very young project, so feel free to poke around and contribute! and ask me anything :D</p>
-<h2 id="easy-access">Easy access</h2>
-<p>Another reason for Gloria is creating an open source project that is super friendly for
-beginers. I mentor different students from some bootcamps and other groups, and sometimes
-they struggle getting started in open source projects. I know I did the first time I gave it a try.</p>
-<p>Gloria aims to be a very friendly community, with code being easy to read and understand, and with
-its members willing to collaborate and pair with new contributors to get them onboard.</p>
-<p>There are many projects like this, but this is ours. Enjoy!</p>
-<h2 id="atwood-s-law">Atwood&#39;s Law</h2>
-<p>Any application that can be written in JavaScript, will eventually be written in JavaScript.</p>
-<p><a href="https://blog.codinghorror.com/the-principle-of-least-power/">Check here for details</a></p>
-
-
-            <div>
-                    Posted by: david silva in 
-                Tue Nov 22 2016 16:00:00 GMT-0800 (PST)
-            </div>
-
-            <p>
-                <a href="/">Home</a>
-            </p>
+        <div class="container main-content">
+            
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span></span> &raquo; <a href="https://gloriajs.com"></a></li>
+    {% endfor %}
+  </ul>
+</div>
         </div>
         <footer class="container-fluid">
             <div class="col-sm-4">
@@ -96,6 +75,7 @@ its members willing to collaborate and pair with new contributors to get them on
                     </strong>
                 </p>
             </div>
-        </footer>        <script src="/scripts/jquery-1.10.2.min.js"></script>
+        </footer>        <script src="/scripts/gloria.js"></script>
+        <script src="/prism/prism.js"></script>
     </body>
 </html>
