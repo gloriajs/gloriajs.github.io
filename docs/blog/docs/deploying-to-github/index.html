@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+    
+        <title>gloria-docs</title>
+        <meta name="description" content="Documentation for the tool gloriajs">
+        <meta name="author" content="david silva">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <link rel="stylesheet" type="text/css" href="/css/flatly.min.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/pygment_trac.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
+    
+        <link rel="stylesheet" href="/prism/prism.css">
+        <link rel="stylesheet" href="/sass/main.css">
+    
+      <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Gloria</a>
+                    </div>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="/documentation/commands/">Usage</a></li>
+                        <li ><a href="/contributing/">Contributing</a></li>
+                        <li ><a href="/blog">Blog</a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <a href="https://github.com/gloriajs/gloria"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+        <div class="container">
+            <h1>Deploying to Github</h1>
+
+            <p>Gloria is compatible with the new github pages out of the box. Is the easiest
+way to deploy your site for free! with support for custom domains and </p>
+<p><a href="https://pages.github.com/">Find more information about Github Pages</a></p>
+<h2 id="steps">Steps</h2>
+<h3 id="build">Build</h3>
+<p>Build the project to a folder named <code>docs</code>.</p>
+<pre><code class="lang-bash">gloria build docs
+</code></pre>
+<h3 id="push">Push</h3>
+<p>Do git add, commit and push to send your data to github.</p>
+<p>Push your project to github, you can use any branch, but master is usually
+the best one to use.</p>
+<h3 id="select-the-pages-source">Select the pages source</h3>
+<p>In the repo settings, there&#39;s an option called github pages. The source appears
+as <code>none</code> by default. If you pushed a <code>docs</code> folder there should be an option
+that allows you to choose branch master and docs folder.</p>
+<p>Github will serve the files from that folder, the same way that <code>gloria serve</code> works. </p>
+<h3 id="-">?</h3>
+<p>???</p>
+<h3 id="profit">Profit</h3>
+<p>Share the URL with everyone!</p>
+<h2 id="additional-steps">Additional Steps</h2>
+<h3 id="ssl">SSL</h3>
+<p>CloudFlare and github pages work very well for free SSL,
+configure your domain to use the cloudflare DNS and activate the SSL.
+You can get more 
+<a href="https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/">details in their website</a>. </p>
+<h3 id="custom-domain">Custom domain</h3>
+<p>Using a custom domain with github pages is super easy!</p>
+<p>Change your DNS settings to the following, depending on whether you&#39;re using a naked domain or www.</p>
+<p>For Apex or naked domain, create two A records pointing to:</p>
+<pre><code>192.30.252.153
+192.30.252.154
+</code></pre><p>To use a subdomain, like www, create a CNAME record pointing to:</p>
+<pre><code>YOUR-GITHUB-USERNAME.github.io
+</code></pre><p><a href="https://help.github.com/articles/using-a-custom-domain-with-github-pages/">Find more info in their website</a>.</p>
+
+
+            <div>
+                
+            </div>
+
+            <p>
+                <a href="/">Home</a>
+            </p>
+        </div>
+        <footer class="container-fluid">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <strong>
+                        <a href="https://spdx.org/licenses/Apache-2.0">Some rights reserved, Apache 2.0</a>
+                    </strong>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <strong>
+                        <a href="https://github.com/gloriajs/gloria-docs">Make this site great again!</a>
+                    </strong>
+                </p>
+            </div>
+        </footer>        <script src="/scripts/jquery-1.10.2.min.js"></script>
+    </body>
+</html>
