@@ -107,5 +107,44 @@ By default it will ignore the .git directory and other files that it considers u
 Usage: 
 
 ```bash
-gloria build docs
+gloria build [dest]
+
+Options:
+  --help         Show help                                             [boolean]
+  --dest         Destination path or folder to build the site, by default it
+                 uses 'site'.                                      [default: ""]
+  --clear        When different to false, it will not
+                 overwrite other files in the dest folder.       [default: true]
+  --git          By default it will ignore the .git directory.
+                 I don't see a reason why would you include it, but if you want
+                 to use --git=true.                             [default: false]
+  --save         By default it will save new configuration arguments in the
+                 _config file.                                   [default: true]
+  --silent, -s   Limit the amount of output to the console.
+                                                      [boolean] [default: false]
+  -v, --version  Show version number                                   [boolean]
+```
+
+<a name="serve"></a>
+## serve
+
+Serves the site from the last known destination, or from the specific folder given
+
+Usage:
+
+```bash
+gloria serve [dest]
+
+Options:
+  --help                  Show help                                    [boolean]
+  --dest                  Destination path or folder to serve the site from.
+                                                               [default: "site"]
+  --port                  Port on which to serve the site.     [default: "3300"]
+  --suppress-browser, -b  Don't open the browser automatically.
+                                                      [boolean] [default: false]
+  --watch, -w             Watchs the source files for changes, and re-builds the
+                          site.                        [boolean] [default: true]
+  --silent, -s            Limit the amount of output to the console.
+                                                       [boolean] [default: true]
+  -v, --version           Show version number                          [boolean]
 ```
