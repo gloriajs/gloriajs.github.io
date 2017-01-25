@@ -45,16 +45,12 @@
                 </div><!-- /.container-fluid -->
             </nav>
         </header>
-        <a href="https://github.com/gloriajs/gloria"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
             <header>
       <div class="inner">
         <h1>Welcome to GloriaJS</h1>
         <h2>Documentation website for gloria</h2> 
       </div>
     </header>
-
-
-
 
 <div class="container">
     <h1>Join Gloria in Slack</h1>
@@ -176,7 +172,11 @@ version: 1.0.0
             in the first line of the file, and add any key pair of attributes using the
             <a href="https://learn.getgrav.org/advanced/yaml">Yaml</a> syntax, and finish with three dashes. Like this:
             <code></code>`</p>
+        <p>
+            This change allows accessing variables defined in layouts' and includes' frontmatters. This could be achieved through the following syntax.  for accessing layout variables or
+ for accessing includes' (hbs partials) variables. head here is the name of the include. g (short for gloria) acts as a namespace to avoid collision between common variable names like 'title' or 'description'.
 
+        </p>
         <hr>
 
         <p>

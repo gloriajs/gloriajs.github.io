@@ -11,9 +11,6 @@ layout: full
       </div>
     </header>
 
-
-
-
 <div class="container">
     <h1>Join Gloria in Slack</h1>
     <p>We have a slack team where you can get support, help for contributing, or where you can 
@@ -134,7 +131,11 @@ version: 1.0.0
             in the first line of the file, and add any key pair of attributes using the
             <a href="https://learn.getgrav.org/advanced/yaml">Yaml</a> syntax, and finish with three dashes. Like this:
             <code></code>`</p>
+        <p>
+            This change allows accessing variables defined in layouts' and includes' frontmatters. This could be achieved through the following syntax. {{ page.g.layout.var1}} for accessing layout variables or
+{{ page.g.head.var1}} for accessing includes' (hbs partials) variables. head here is the name of the include. g (short for gloria) acts as a namespace to avoid collision between common variable names like 'title' or 'description'.
 
+        </p>
         <hr>
 
         <p>
