@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "npm test "
+    "test": "npm test ",
+    "gloria-local": "./node_modules/gloria-local/bin/gloria"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/gloriajs/gloriajs.github.io#readme",
   "dependencies": {
-    "@gloriajs/gloria": "^2.0.1"
+    "@gloriajs/gloria": "^2.0.1",
+    "gloria-local": "file:../gloria"
   }
 }
