@@ -1,0 +1,28 @@
+{
+  "name": "@gloriajs/docs",
+  "version": "1.0.0",
+  "description": "Docs for gloria js and sample site to showcase features",
+  "main": "bin/gloria",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "npm test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gloriajs/gloriajs.github.io.git"
+  },
+  "keywords": [
+    "gloriajs"
+  ],
+  "author": "dvidsilva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gloriajs/gloriajs.github.io/issues"
+  },
+  "homepage": "https://github.com/gloriajs/gloriajs.github.io#readme",
+  "dependencies": {
+    "@gloriajs/gloria": "^2.0.1"
+  }
+}

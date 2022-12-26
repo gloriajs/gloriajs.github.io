@@ -1,6 +1,6 @@
 name: gloria-docs
-tagline: 'A responsive theme for your project on GitHub Pages'
-baseurl: 'https://gloriajs.com'
+tagline: 'A simple static website generator'
+baseurl: 'https://gloriajs.github.io'
 gems:
     - jekyll-paginate
 markdown: kramdown
@@ -10,5 +10,5 @@ layout: bootstrap
 author: 'david silva'
 description: 'Documentation for the tool gloriajs'
 version: 0.4.0
-dest: docs
+dest: build
 theme: architect
