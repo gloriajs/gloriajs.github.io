@@ -9,7 +9,6 @@ include:
     - pages
     - posts
     - data
-    - styles
 copy:
     - public
 exclude:

@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@gloriajs/gloria@^2.0.1":
-  version "2.0.2"
-  resolved "https://npm.pkg.github.com/download/@gloriajs/gloria/2.0.2/86bf0bd8a0f09475b42d7378a9d64772846cc9a9#86bf0bd8a0f09475b42d7378a9d64772846cc9a9"
-  integrity sha512-cBQqbnnMOa/llgQPFv7cq3BFEwdRDT+yHSN1ZCks86ETBw/QwWpTcdp7fP0h0mNMW6wSrymjq4QOXcNm8sr3xw==
+"@gloriajs/gloria@~2.1.2":
+  version "2.1.2"
+  resolved "https://npm.pkg.github.com/download/@gloriajs/gloria/2.1.2/2dbcd713ce6b8fc5b4de22d9a3db48bc2c3621d8#2dbcd713ce6b8fc5b4de22d9a3db48bc2c3621d8"
+  integrity sha512-cn4HySvzeDWiUjyDbrcIvd9mJbTIDeh/q9S7Ugv0Uv25n7HQYey+0mNFFmFm+gWmyqjL9Ta26fh8aHnPIhQI+A==
   dependencies:
     async "^2.1.2"
     chalk "^1.1.3"
@@ -15,6 +15,7 @@
     fs-extra "^1.0.0"
     fs-promise "^1.0.0"
     handlebars "^4.0.6"
+    klaw-sync "^6.0.0"
     liquid-to-handlebars "^0.3.2"
     marked "^0.3.6"
     moment "^2.17.1"
@@ -29,6 +30,7 @@
     shelljs "^0.7.5"
     string "^3.3.3"
     stylus "^0.54.5"
+    uuid "^9.0.0"
     yaml "^0.3.0"
     yamljs "^0.2.8"
     yargs "^6.6.0"
@@ -665,7 +667,7 @@ glob@^7.0.0, glob@^7.0.5, glob@^7.1.6:
     path-is-absolute "^1.0.0"
 
 "gloria-local@file:../gloria":
-  version "2.1.1"
+  version "2.1.2"
   dependencies:
     async "^2.1.2"
     chalk "^1.1.3"
