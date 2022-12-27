@@ -1,14 +1,18 @@
-name: gloria-docs
+name: gloria docs
 tagline: 'A simple static website generator'
 baseurl: 'https://gloriajs.github.io'
-gems:
-    - jekyll-paginate
-markdown: kramdown
-location: gloria-docs
-longname: 'Gloria docs'
-layout: bootstrap
-author: 'david silva'
+author: 'daveed silva'
 description: 'Documentation for the tool gloriajs'
-version: 0.4.0
 dest: build
 theme: architect
+css: tailwind
+include:
+    - pages
+    - posts
+    - data
+    - styles
+copy:
+    - public
+exclude:
+    - .draft.md
+version: 2.0.4
