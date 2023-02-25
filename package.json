@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/gloriajs/gloriajs.github.io#readme",
   "dependencies": {
-    "@gloriajs/gloria": "~2.1.2",
+    "@gloriajs/gloria": "~2.1.2"
+  },
+  "optionalDependencies": {
     "gloria-local": "file:../gloria"
   }
 }
