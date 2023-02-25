@@ -1,5 +1,7 @@
 ---
-url: /blog/
+permalink: /blog/
+title: Blog
+description: Blog posts or something
 ---
 <h1>Blog</h1>
 

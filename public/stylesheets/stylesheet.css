@@ -7,9 +7,12 @@
  */
 
 html {
-  font-family: sans-serif; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -ms-text-size-adjust: 100%; /* 2 */
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
 }
 
 /**
@@ -55,8 +58,10 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
 }
 
 /**
@@ -254,9 +259,12 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 0; /* 3 */
-  font: inherit; /* 2 */
-  color: inherit; /* 1 */
+  margin: 0;
+  /* 3 */
+  font: inherit;
+  /* 2 */
+  color: inherit;
+  /* 1 */
 }
 
 /**
@@ -288,11 +296,14 @@ select {
  */
 
 button,
-html input[type="button"], /* 1 */
+html input[type="button"],
+/* 1 */
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button; /* 2 */
-  cursor: pointer; /* 3 */
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
 }
 
 /**
@@ -333,8 +344,10 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
 
 /**
@@ -355,10 +368,12 @@ input[type="number"]::-webkit-outer-spin-button {
  */
 
 input[type="search"] {
-  -webkit-box-sizing: content-box; /* 2 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  -webkit-appearance: textfield; /* 1 */
+  -webkit-appearance: textfield;
+  /* 1 */
 }
 
 /**
@@ -388,8 +403,10 @@ fieldset {
  */
 
 legend {
-  padding: 0; /* 2 */
-  border: 0; /* 1 */
+  padding: 0;
+  /* 2 */
+  border: 0;
+  /* 1 */
 }
 
 /**
@@ -443,6 +460,7 @@ p {
 a {
   color: #2879d0;
 }
+
 a:hover {
   color: #2268b2;
 }
@@ -526,16 +544,19 @@ a.button {
   line-height: 1.2;
   color: #fff;
 }
+
 a.button small {
   display: block;
   font-size: 11px;
 }
+
 header a.button {
   position: absolute;
   top: 0;
   right: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
+
 aside a.button {
   display: block;
   width: 138px;
@@ -545,7 +566,8 @@ aside a.button {
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 
-code, pre {
+code,
+pre {
   margin-bottom: 30px;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
@@ -565,6 +587,7 @@ pre {
   background: #fff;
   border: solid 1px #f2f2f2;
 }
+
 pre code {
   padding: 0;
   color: #2879d0;
@@ -572,7 +595,9 @@ pre code {
   border: none;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   margin-bottom: 20px;
 }
 
@@ -637,6 +662,7 @@ form {
   color: #474747;
   text-indent: 4px;
 }
+
 #main-content h2:before {
   padding-right: 0.3em;
   margin-left: -1.5em;
@@ -684,6 +710,7 @@ h4:before {
   color: #474747;
   text-indent: 3px;
 }
+
 h5:before {
   padding-right: 0.3em;
   margin-left: -3.2em;
@@ -698,6 +725,7 @@ h5:before {
   color: #474747;
   text-indent: 3px;
 }
+
 h6:before {
   padding-right: 0.3em;
   margin-left: -3.7em;
@@ -750,33 +778,47 @@ dl dd {
   content: '.';
 }
 
-.clearfix {display: inline-block;}
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
 
 /* #Media Queries
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) { }
+@media only screen and (max-width: 959px) {}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .inner {
     width: 740px;
   }
-  header h1, header h2 {
+
+  header h1,
+  header h2 {
     width: 340px;
   }
+
   header h1 {
     font-size: 60px;
   }
+
   header h2 {
     font-size: 30px;
   }
+
   #main-content {
     width: 490px;
   }
+
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
@@ -794,21 +836,28 @@ dl dd {
   .inner {
     width: 93%;
   }
+
   header {
     padding: 20px 0;
   }
+
   header .inner {
     position: relative;
   }
-  header h1, header h2 {
+
+  header h1,
+  header h2 {
     width: 100%;
   }
+
   header h1 {
     font-size: 48px;
   }
+
   header h2 {
     font-size: 24px;
   }
+
   header a.button {
     position: relative;
     display: inline-block;
@@ -826,15 +875,18 @@ dl dd {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
   }
+
   header a.button small {
     display: inline;
     font-size: 13px;
   }
+
   #main-content,
   aside#sidebar {
     float: none;
     width: 100% ! important;
   }
+
   aside#sidebar {
     min-height: 0;
     padding: 20px 0;
@@ -842,9 +894,11 @@ dl dd {
     background-image: none;
     border-top: solid 1px #ddd;
   }
+
   aside#sidebar a.button {
     display: none;
   }
+
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,
@@ -858,7 +912,13 @@ dl dd {
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) { }
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) { }
+@media only screen and (max-width: 479px) {}
+
+.container {
+  max-width: 1280px;
+  width: 94%;
+  margin: 0 auto;
+}

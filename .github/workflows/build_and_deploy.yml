@@ -26,9 +26,12 @@ jobs:
           yarn install --ignore-optional
           npm run build
 
-      # - name: Deploy 🚀
-      #   uses: actions/upload-pages-artifact@v1
-      #   with:
-      #     path: ./build # The folder the action should deploy.
-      #     name: github-pages
-      #     retention-days: 1
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./build # The folder the action should deploy.
+          name: github-pages
+          retention-days: 1
+
+      - name:  Deploy  🚀
+        uses: actions/deploy-pages@v1
