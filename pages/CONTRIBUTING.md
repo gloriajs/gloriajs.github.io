@@ -1,7 +1,41 @@
+---
+url: /contributing/
+---
 # CONTRIBUTING
 
 Contributions in the form of ideas, designs, and code are always welcome no matter how large or small. If you want to help but are not sure where to start, you can check out our project's [Issues](https://github.com/gloriajs/gloria/issues).
 
+## Setup
+
+We do use Yarn in this project, so:
+
+> Install yarn: https://yarnpkg.com/en/docs/install
+
+Afterward, clone our repository:
+
+```sh
+$ git clone https://github.com/gloriajs/gloria.git
+$ cd gloria/
+$ yarn
+```
+
+When adding a new dependency to our project, we use `yarn add [package name]` rather than `npm install [--save or --save-dev] [package name]`. It keeps our `yarn.lock` file (and therefore our dependencies) consistent across all our contributors.
+
+## Running locally
+
+Run `npm link` inside the root folder to use your local development `gloria` instead of the globally installed one.
+
+or just use `node`:
+
+```sh
+$ node bin/gloria [command]
+```
+
+## Testing
+
+```sh
+$ npm test
+```
 
 ## Pull Requests
 
@@ -18,13 +52,23 @@ We actively welcome any pull requests that are backed up by current issues or by
 By contributing to Gloria, you agree that your contributions will be licensed
 under its [Apache license](LICENSE).
 
+## Branching Strategies
+
+We recommend using the git flow method, to know what type of code is going in every branch.
+
+Installing the addon [git flow](https://github.com/nvie/gitflow) will facilitate this.
 
 ## Code styles
 
-We're using prettier.
+We use jsc to make sure the style in the code is similar across every developer.
+
+Arbitrarily we decided to use the airbnb style guide. You can learn more about it
+[in their github repo](https://github.com/airbnb/javascript).
+
+Look at our [.jscrc file](https://github.com/gloriajs/gloria/blob/master/.jscsrc).
 
 Pull requests that don't adhere to the code style will probably get rejected, or commented with
-some requests.
+some advice.
 
 The code style includes things like how to do indentation, how to declare variables, allowed
 capitalization, etc.
@@ -38,4 +82,4 @@ To check out locally the code pushed by others, look at this
 
 ## Code of Conduct
 
-Keep in mind our [code of conduct](CODE_OF_CONDUCT.md) when participating.
+Keep in mind our [code of conduct](/coc) when participating.

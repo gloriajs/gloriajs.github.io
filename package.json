@@ -9,7 +9,8 @@
   "scripts": {
     "test": "npm test ",
     "gloria-local": "./node_modules/gloria-local/bin/gloria",
-    "gloria": "./node_modules/@gloriajs/gloria/bin/gloria"
+    "gloria": "./node_modules/@gloriajs/gloria/bin/gloria",
+    "build": "./node_modules/@gloriajs/gloria/bin/gloria build"
   },
   "repository": {
     "type": "git",

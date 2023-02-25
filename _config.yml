@@ -1,16 +1,17 @@
 name: gloria docs
-tagline: 'A simple static website generator'
-baseurl: 'https://gloriajs.github.io'
-author: 'daveed silva'
+tagline: A simple static website generator
+baseurl: https://gloria.js.org
+author: daveed
 description: Documentation for the tool gloriajs
 dest: build
 css: tailwind
 include:
+    - layouts
     - pages
-    - posts
-    - data
+    # - posts
+    # - data
 copy:
     - public
 exclude:
     - .draft.md
-version: 2.0.4
+version: 3
