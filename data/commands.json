@@ -1,0 +1,11 @@
+[
+    {
+        "name": "collect",
+        "args": "[output]",
+        "args-description": "[output]: file path on where to save the resulting json\n",
+        "description": "traverses the include-paths and saves information about the available files",
+        "output-description": "traverses the include-paths and saves information about the available files",
+        "docs-link": "",
+        "example": "yarn run gloria collect"
+    }
+]

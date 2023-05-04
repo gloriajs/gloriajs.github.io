@@ -31,4 +31,9 @@ permalink: '/'
         <a href="https://github.com/gloriajs/gloria/">Github</a> and
         <a href="https://www.npmjs.com/package/gloriajs/">NPM</a>.
     </p>
+    <h2>Docs</h2>
+    <p>
+        Checkout the list of available
+        <a href="/documentation/commands/">Commands</a> and their respective documentation:
+    </p>
 </div>

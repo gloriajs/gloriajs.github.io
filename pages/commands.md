@@ -1,17 +1,16 @@
 ---
 title: Commands
-description: ""
-type: page
-layout: ""
+description: "List of available gloria cli commands"
+layout: documentation
 category: documentation
-url: documentation/commands
+permalink: documentation/commands
 ---
 
 # Usage
 
 After installing gloria, several commands are now available for
 you to interact with your page, create new content, build
-and distribute easier! 
+and distribute easier!
 
 You can find information about the commands and options here.
 
@@ -26,20 +25,20 @@ You can find information about the commands and options here.
 - [version](#version)
 
 <a name='init'></a>
-## Init 
+## Init
 
 It initializes a new gloria website in the destination folder. This is the only
 command that is started from an outside directory. Every other command requires
-a `_config.yml` to be present in order to execute. 
+a `_config.yml` to be present in order to execute.
 
 Usage:
 
 ```bash
 gloria init mysite
 ```
-       
-Initializes a new site, interactively or using the given parameters. 
-It will create a base configuration file and sample pages using the desired 
+
+Initializes a new site, interactively or using the given parameters.
+It will create a base configuration file and sample pages using the desired
 layout.
 
 Options:
@@ -66,12 +65,12 @@ Options:
 
 Creates new content, with different templates, depending on the type desired.
 
-Usage: 
+Usage:
 ```bash
-new [type] [title] 
+new [type] [title]
 # Examples:
 gloria new post hello-world
-gloria new --type=page --title='Contact Us' --description='Contact form.'                
+gloria new --type=page --title='Contact Us' --description='Contact form.'
 ```
 
 Options:
@@ -102,11 +101,11 @@ Builds the site into the desired destination. By default it will use a folder na
 directory of the project, and will create it if doesn't exists. If it exists it will delete
 all it's contents before writing to it.
 
-It won't build to a parent folder. The command will fail if _config.yml is invalid or not present. 
+It won't build to a parent folder. The command will fail if _config.yml is invalid or not present.
 
 By default it will ignore the .git directory and other files that it considers unnecesary.
 
-Usage: 
+Usage:
 
 ```bash
 gloria build [dest]

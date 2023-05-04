@@ -10,6 +10,8 @@
     "test": "npm test ",
     "gloria-local": "../gloria/bin/gloria",
     "gloria": "./node_modules/gloriajs/bin/gloria",
+    "write": "./node_modules/gloriajs/bin/gloria write",
+    "local-server": "npx -y http-server build",
     "build": "./node_modules/gloriajs/bin/gloria build"
   },
   "repository": {
