@@ -1,5 +1,6 @@
 ---
-name: Home
+name: GloriaJS
+title: GloriaJS - Home
 description: Documentation website for gloria
 layout: full
 permalink: '/'
@@ -14,7 +15,7 @@ permalink: '/'
         bg-primary
         overflow-hidden">
     <div class="inner">
-        <h1>Welcome to GloriaJS</h1>
+        <h1>Welcome to {{GloriaJS}}</h1>
         <h2>{{page.description}}</h2>
     </div>
 </header>
@@ -34,6 +35,16 @@ permalink: '/'
     <p>
         Checkout the list of available
         <a href="/documentation/commands/">Commands</a> and their respective documentation:
+    </p>
+    <h2>Deploy</h2>
+    <p>
+        <a href="/documentation/deploy/">Deploy</a>
+        your site to github pages, with .actions with a couple changes to your
+        <a href="https://github.com/gloriajs/gloriajs.github.io/blob/main/package.json" target="_blank" rel="noopener">
+        package.json</a>
+        and
+        <a href="https://github.com/gloriajs/gloriajs.github.io/blob/main/.github/workflows/build_and_deploy.yml" target="_blank" rel="noopener">
+        .github/workflows</a>.
     </p>
     <h2>Examples</h2>
     <p><strong>Some websites built by our friends:</strong></p>
