@@ -17,11 +17,15 @@ name: documentation
             pb-[100px]
             bg-primary
             overflow-hidden">
-                <h1>{{page.name}}</h1>
-                <h2>{{page.description}}</h2>
+                <div class="inner">
+                    <h1>{{page.name}}</h1>
+                    <h2>{{page.description}}</h2>
+                </div>
         </header>
         <div class="container mx-auto px-4">
-            {{{page.html}}}
+            <div class="inner">
+                {{{page.html}}}
+            </div>
         </div>
         <script src="/scripts/gloria.js"></script>
         <script src="/prism/prism.js"></script>
