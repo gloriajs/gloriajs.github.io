@@ -44,6 +44,6 @@ permalink: '/'
         <br>
         and look at the speed of those builds
         <br>
-        <img src="./santo-cabron-build-logs.png" alt="Santo Cabrón built times in github" class="max-w-screen-md">
+        <img src="./santo-cabron-build-logs.png" alt="Santo Cabrón built times in github" class="max-w-screen-md" style="max-width: 100%;">
     </p>
 </div>
