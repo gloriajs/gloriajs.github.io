@@ -39,10 +39,10 @@ permalink: '/'
     <h2>Examples</h2>
     <p><strong>Some websites built by our friends:</strong></p>
     <p>
-        <a href="https://santocabron.com">Santo Cabrón</a> was built using gloria without access to documentation.
+        <a href="https://santocabron.com" target="_blank" rel="noopener">Santo Cabrón</a> was built using gloria without access to documentation.
         <br>
         and look at the speed of those builds
         <br>
-        <img src="./public/santo-cabron-build-logs.png" alt="santo cabron built times in github">
+        <img src="./public/santo-cabron-build-logs.png" alt="Santo Cabrón built times in github">
     </p>
 </div>
