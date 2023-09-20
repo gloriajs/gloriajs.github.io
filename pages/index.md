@@ -18,8 +18,7 @@ permalink: '/'
         <h2>{{page.description}}</h2>
     </div>
 </header>
-
-<div class="container">
+<div class="container mx-auto px-4">
     <h1>Join Gloria</h1>
     <p>
         <em>gloria is spanish for glory, also the name of my mom and the name was available in npm</em>
@@ -45,6 +44,6 @@ permalink: '/'
         <br>
         and look at the speed of those builds
         <br>
-        <img src="./santo-cabron-build-logs.png" alt="Santo Cabrón built times in github">
+        <img src="./santo-cabron-build-logs.png" alt="Santo Cabrón built times in github" class="max-w-screen-md">
     </p>
 </div>
