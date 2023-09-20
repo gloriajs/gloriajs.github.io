@@ -12,6 +12,7 @@
     "gloria": "./node_modules/gloriajs/bin/gloria",
     "write": "./node_modules/gloriajs/bin/gloria write",
     "local-server": "npx -y http-server build",
+    "copy": "./node_modules/gloriajs/bin/gloria copy",
     "build": "./node_modules/gloriajs/bin/gloria build"
   },
   "repository": {

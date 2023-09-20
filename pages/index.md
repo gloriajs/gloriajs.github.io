@@ -29,7 +29,7 @@ permalink: '/'
     </p>
     <p>To install and get started, find us in
         <a href="https://github.com/gloriajs/gloria/">Github</a> and
-        <a href="https://www.npmjs.com/package/gloriajs/">NPM</a>.
+        <a href="https://www.npmjs.com/package/gloriajs/">NPM.
     </p>
     <h2>Docs</h2>
     <p>
@@ -39,7 +39,9 @@ permalink: '/'
     <h2>Examples</h2>
     <p><strong>Some websites built by our friends:</strong></p>
     <p>
-        <a href="https://santocabron.com" target="_blank" rel="noopener">Santo Cabrón</a> was built using gloria without access to documentation.
+        <a href="https://santocabron.com" target="_blank" rel="noopener"><strong>Santo Cabrón</strong></a>:
+        <a href="https://github.com/santocabron/santocabron.github.io" target="_blank" rel="noopener">Github</a>
+        was built using gloria without access to documentation.
         <br>
         and look at the speed of those builds
         <br>
