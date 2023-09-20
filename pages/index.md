@@ -29,7 +29,7 @@ permalink: '/'
     </p>
     <p>To install and get started, find us in
         <a href="https://github.com/gloriajs/gloria/">Github</a> and
-        <a href="https://www.npmjs.com/package/gloriajs/">NPM.
+        <a href="https://www.npmjs.com/package/gloriajs/">NPM</a>.
     </p>
     <h2>Docs</h2>
     <p>
@@ -45,6 +45,6 @@ permalink: '/'
         <br>
         and look at the speed of those builds
         <br>
-        <img src="./public/santo-cabron-build-logs.png" alt="Santo Cabrón built times in github">
+        <img src="./santo-cabron-build-logs.png" alt="Santo Cabrón built times in github">
     </p>
 </div>
