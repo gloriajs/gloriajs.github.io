@@ -40,17 +40,34 @@ npm run gloria-local -- setup
 
 ## Configuration files
 
+Run the `setup` command to generate default configuration files and the default
+folder structure.
 
+```
+npm run gloria -- setup
+```
+
+Checkout the [configuration](/documentation/config) documentation for more
+information.
 
 ## Folder Structure
 
+Create the following folders to start adding your files:
 
+```
+public
+pages
+build
+layouts/tailwind
+```
 
 ## Next steps
 
 - [CSS]
-- [Static Files]
+- [Layouts]
+- [Partials]
+- [Static Files](/documentation/static)
 - [Data interpolation]
 - [Best practices]
-- [Deployment] <a href="/documentation/deploy/">Deploy</a> instructions
-available in the documentation for Github Pages.
+- [Deployment](/documentation/deploy) instructions for Github Pages and other
+static site hosts.
