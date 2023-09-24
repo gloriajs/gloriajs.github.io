@@ -1,5 +1,6 @@
 ---
 title: Commands
+name: Commands
 description: "List of available gloria cli commands"
 layout: documentation
 category: documentation
