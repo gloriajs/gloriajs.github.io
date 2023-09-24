@@ -15,7 +15,7 @@ permalink: '/'
         bg-primary
         overflow-hidden">
     <div class="inner">
-        <h1>Welcome to {{GloriaJS}}</h1>
+        <h1>Welcome to {{page.name}}</h1>
         <h2>{{page.description}}</h2>
     </div>
 </header>
