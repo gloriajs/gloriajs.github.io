@@ -8,7 +8,7 @@ name: documentation
         <link rel="stylesheet" href="/stylesheets/stylesheet.css">
     </head>
     <body>
-        <nav class="bg-white border-gray-200 dark:bg-gray-900" style="position: absolute; top: 0;">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900" style="position: absolute; top: 0; z-index: 2;">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" class="flex items-center">
                     <img src="/images/gloria-js.png" class="h-8 mr-3" alt="Gloria JS Logo" />
