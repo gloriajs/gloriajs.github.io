@@ -19,10 +19,10 @@ You can find information about the commands and options here.
 <!-- - [init](#init) -->
 <!-- - [new](#new) -->
 - [user your local install](#locally)
-- [build](#setup)
+- [setup](#setup)
 - [build](#build)
-- [build](#copy)
-- [build](#css:tailwind)
+- [copy](#copy)
+- [css:tailwind](#css:tailwind)
 <!-- - [serve](#serve) -->
 <!-- - [migrate](#migrate) -->
 - [help](#help)
