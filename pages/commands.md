@@ -16,15 +16,78 @@ You can find information about the commands and options here.
 
 ## Available commands
 
-- [init](#init)
-- [new](#new)
+<!-- - [init](#init) -->
+<!-- - [new](#new) -->
+- [user your local install](#locally)
+- [build](#setup)
 - [build](#build)
-- [serve](#serve)
-- [migrate](#migrate)
+- [build](#copy)
+- [build](#css:tailwind)
+<!-- - [serve](#serve) -->
+<!-- - [migrate](#migrate) -->
 - [help](#help)
 - [version](#version)
 
-<a name='init'></a>
+<a name='locally'></a>
+## Run Locally
+
+Checkout [installation](/documentation/install) instructions to set up gloria
+locally.
+
+<a name='setup'></a>
+## Setup
+
+Tries to create a `_config.yml` with the default settings if none exists.
+
+<a name='copy'></a>
+## Copy
+
+Copies the contents of the public folder into the build directory overwriting
+any files built previously.
+
+
+<a name='css:tailwind'></a>
+## CSS:Tailwind
+
+Builts the HTML files and runs the `tailwind` command. Creates a resulting
+`stylesheets/styles.css` with the classes used on the project.
+
+<a name='build'></a>
+## Build
+
+Generates all the pages and interpolates data into them.
+
+Builds the site into the desired destination. By default it will use a folder
+name 'build' in the root directory of the project, and will create it if doesn't
+exists. If it exists it should delete all it's contents before writing to it.
+
+It won't build to a parent folder. The command will fail if _config.yml is
+invalid or not present.
+
+It will traverse the folders specified in the `_config.yml` idealling ignoring
+the ones that match the exclude property.
+
+Usage:
+
+```bash
+gloria build [dest]
+
+Options:
+  --help         Show help                                             [boolean]
+  --dest         Destination path or folder to build the site, by default it
+                 uses 'site'.                                      [default: ""]
+  --clear        When different to false, it will not
+                 overwrite other files in the dest folder.       [default: true]
+  --git          By default it will ignore the .git directory.
+                 I don't see a reason why would you include it, but if you want
+                 to use --git=true.                             [default: false]
+  --save         By default it will save new configuration arguments in the
+                 _config file.                                   [default: true]
+  --silent, -s   Limit the amount of output to the console.
+                                                      [boolean] [default: false]
+  -v, --version  Show version number                                   [boolean]
+```
+<!-- <a name='init'></a>
 ## Init
 
 It initializes a new gloria website in the destination folder. This is the only
@@ -58,9 +121,9 @@ Options:
   --interactive  Use the interactive prompt to complete the details
                                                                  [default: true]
   --force        If files exists, overwrite them?               [default: false]
- ```
+ ``` -->
 
-<a name='new'></a>
+<!-- <a name='new'></a>
 ## New
 
 Creates new content, with different templates, depending on the type desired.
@@ -89,44 +152,10 @@ Options:
   --verbose      Supress logs and warnings                       [default: true]
   --folder       Can be used to prepend to the directory where the file is
                  created.                                          [default: ""]
-```
+``` -->
 
-<a name='build'></a>
-## Build
 
-Generates all the pages and posts, copies the assets to the desired location, and
-prepares the website to be launched.
-
-Builds the site into the desired destination. By default it will use a folder name 'site' in the root
-directory of the project, and will create it if doesn't exists. If it exists it will delete
-all it's contents before writing to it.
-
-It won't build to a parent folder. The command will fail if _config.yml is invalid or not present.
-
-By default it will ignore the .git directory and other files that it considers unnecesary.
-
-Usage:
-
-```bash
-gloria build [dest]
-
-Options:
-  --help         Show help                                             [boolean]
-  --dest         Destination path or folder to build the site, by default it
-                 uses 'site'.                                      [default: ""]
-  --clear        When different to false, it will not
-                 overwrite other files in the dest folder.       [default: true]
-  --git          By default it will ignore the .git directory.
-                 I don't see a reason why would you include it, but if you want
-                 to use --git=true.                             [default: false]
-  --save         By default it will save new configuration arguments in the
-                 _config file.                                   [default: true]
-  --silent, -s   Limit the amount of output to the console.
-                                                      [boolean] [default: false]
-  -v, --version  Show version number                                   [boolean]
-```
-
-<a name="migrate"></a>
+<!-- <a name="migrate"></a>
 ## Migrate
 
 It will try to migrate a site from a jekyll source to be compatible with gloria.
@@ -151,9 +180,9 @@ Options:
                                                                 [default: false]
   -v, --version  Show version number                                   [boolean]
   --dest                                                       [default: "docs"]
-```
+``` -->
 
-<a name="serve"></a>
+<!-- <a name="serve"></a>
 ## Serve
 
 Serves the site from the last known destination, or from the specific folder given
@@ -175,54 +204,17 @@ Options:
   --silent, -s            Limit the amount of output to the console.
                                                        [boolean] [default: true]
   -v, --version           Show version number                          [boolean]
-```
+``` -->
 
 <a name="help"></a>
 ## Help
 
 Running `gloria help` will display the most recent list of commands, options and
-their description you have access to.
+their description.
 
-It's output will look like this:
-
-```bash
-Commands:
-  build [dest]        Builds the site into the desired destination.
-                      By default it will use a folder name 'site' in the root
-                      directory of the project.
-                      It won't build to a parent folder.
-                      The command will fail if _config.yml is invalid or not
-                      present.
-  init [name]         Initializes a new site, interactively or using the given
-                      parameters.
-                      It will create a base configuration file and sample pages
-                      using the desired layout.                [aliases: create]
-  migrate [source]    Migrates an existing website from a different platform to
-                      gloria.
-                      I'ts pretty buggy now and only works with jekyll.
-                      The replacement is pretty poor right now, it uses regex to
-                      find some liquid tags
-                      and replaces them with handlebars. It ignores some helpers
-                      like loops.
-                      It requires some extra manual work. If that's not cool
-                      with you, please consider a PR.
-  new [type] [title]  Creates new content, with different templates, depending
-                      on the type.
-                      Examples:
-                      gloria new post hello-world
-                      gloria new --type=page --title='Contact Us'
-                      --description='Contact form.'                 [aliases: n]
-  serve [dest]        Serves the site from the last known destination, or from
-                      the specific folder given.
-
-Options:
-  --help         Show help                                             [boolean]
-  -v, --version  Show version number                                   [boolean]
-
-For more information, check out the documentation in github.com/gloriajs/gloria
-```
 
 <a name="version"></a>
 ## version
 
-Running `gloria --version` will display the current version of gloria installed in your system.
+Running `gloria --version` will display the current version of gloria installed
+in the project.

@@ -79,3 +79,17 @@ jobs:
 ```
 
 This instructions will likely change as commands are added and improved.
+
+# Static web hosting
+
+Similar instructions should work out of the box for any static website provider,
+run the `build` or `css:tailwind` commands followed by `copy` to generate the
+contents of the build folder and upload those resulting files to your hosting
+provider.
+
+# AWS S3
+
+Follow instructions for static website hosting and upload the resulting files to
+an S3 bucket configured for
+<a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/HostingWebsiteOnS3Setup.html" rel="noopener" target="_blank">
+static website providing</a>.

@@ -36,6 +36,11 @@ permalink: '/'
         Checkout the list of available
         <a href="/documentation/commands/">Commands</a> and their respective documentation:
     </p>
+    <h2>Install</h2>
+    <p>
+        <a href="/documentation/install/">Install</a>
+        gloria by adding a single npm package to your project and optional configuration files.
+    </p>
     <h2>Deploy</h2>
     <p>
         <a href="/documentation/deploy/">Deploy</a>
