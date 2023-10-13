@@ -58,6 +58,11 @@ permalink: '/'
         <a href="/"><strong>This website</strong></a>:
         <a href="https://github.com/gloriajs/gloria-docs" target="_blank" rel="noopener">Github</a>.
     </p>
+    <p>
+        <a href="https://caliman.org"target="_blank" rel="noopener"><strong>Kalima corp</strong></a>:
+        <a href="https://github.com/calimania/calimania.github.io" target="_blank" rel="noopener">Github</a>.
+    </p>
+    <p>
         <a href="https://santocabron.com" target="_blank" rel="noopener"><strong>Santo Cabrón</strong></a>:
         <a href="https://github.com/santocabron/santocabron.github.io" target="_blank" rel="noopener">Github</a>
         was built using gloria without access to documentation.
