@@ -71,4 +71,9 @@ permalink: '/'
         <br>
         <img src="/images/santo-cabron-build-logs.png" alt="Santo Cabrón built times in github" class="max-w-screen-md" style="max-width: 100%;">
     </p>
+    <h2>Buque Gloria</h2>
+    <p>
+        <a href='https://www.instagram.com/buquegloria' target='_blank'>Buque Gloria</a> -
+        The ARC Gloria (Buque Gloria) is a training ship and official flagship of the Colombian Navy. Commissioned in 1968, it is a sailing vessel that serves as a floating ambassador for Colombia, promoting goodwill and maritime heritage around the world. Here are some key points about Buque Gloria.
+    </p>
 </div>
